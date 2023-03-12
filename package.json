@@ -1,5 +1,5 @@
 {
-  "name": "vue-h5-template",
+  "name": "vue-app-template",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
