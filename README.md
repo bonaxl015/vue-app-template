@@ -24,7 +24,7 @@ yarn install
 ## Usage
 
 ```sh
-yarn run dev
+yarn vite
 ```
 
 
