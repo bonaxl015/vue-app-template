@@ -23,11 +23,11 @@ export default function ({ command, mode }: ConfigEnv): UserConfig {
           replacement: 'vue-i18n/dist/vue-i18n.cjs.js'
         },
         {
-          find: /\/@\//,
+          find: /\@\//,
           replacement: pathResolve('src') + '/'
         },
         {
-          find: /\/#\//,
+          find: /\#\//,
           replacement: pathResolve('types') + '/'
         }
       ]
@@ -51,7 +51,7 @@ export default function ({ command, mode }: ConfigEnv): UserConfig {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: `@import "@nutui/nutui/dist/styles/variables.scss";@import '/@/styles/mixin.scss';`
+          additionalData: `@import "@nutui/nutui/dist/styles/variables.scss";@import '@/styles/mixin.scss';`
         }
       }
     }

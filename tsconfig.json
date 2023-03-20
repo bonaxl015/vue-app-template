@@ -44,8 +44,8 @@
     "noImplicitThis": false,
     "strictNullChecks": false,
     "paths": {
-      "/@/*": ["src/*"],
-      "/#/*": ["types/*"]
+      "@/*": ["src/*"],
+      "#/*": ["types/*"]
     }
   },
   "include": [
