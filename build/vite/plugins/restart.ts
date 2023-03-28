@@ -1,6 +1,6 @@
 /**
  * @name ConfigRestartPlugin
- * @description 监听配置文件修改自动重启Vite
+ * @description watch file modification and auto restart
  */
 
 import ViteRestart from 'vite-plugin-restart'

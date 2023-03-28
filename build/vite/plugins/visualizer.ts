@@ -1,6 +1,6 @@
 /**
  * @name ConfigVisualizerConfig
- * @description 打包体积分析
+ * @description pack volume analysis
  */
 
 import visualizer from 'rollup-plugin-visualizer'

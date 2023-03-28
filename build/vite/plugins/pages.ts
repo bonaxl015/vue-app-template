@@ -1,6 +1,6 @@
 /**
  * @name ConfigPagesPlugin
- * @description 动态生成路由
+ * @description dynamically create routes
  */
 
 import Pages from 'vite-plugin-pages'

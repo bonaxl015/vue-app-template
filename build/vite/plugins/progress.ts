@@ -1,6 +1,6 @@
 /**
  * @name ConfigProgressPlugin
- * @description 构建显示进度条
+ * @description display progress bar
  */
 
 import { Plugin } from 'vite'

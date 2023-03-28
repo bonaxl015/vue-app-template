@@ -1,6 +1,6 @@
 /**
  * @name createVitePlugins
- * @description 封装plugins数组统一调用
+ * @description combine plugins
  */
 
 import type { PluginOption } from 'vite'
@@ -23,30 +23,27 @@ export function createVitePlugins(env: ViteEnv, isBuild: boolean) {
   const { VITE_USE_MOCK, VITE_USE_ERUDA } = env
 
   const vitePlugins: (PluginOption | PluginOption[])[] = [
-    // vue支持
     vue(),
-    // JSX支持
     vueJsx(),
-    // setup语法糖组件名支持
     vueSetupExtend()
   ]
 
-  // 自动按需引入组件
+  // automatically import components when needed
   vitePlugins.push(AutoRegistryComponents())
 
-  // 自动按需引入依赖
+  // automatically import dependencies when needed
   vitePlugins.push(AutoImportDeps())
 
-  // 自动生成路由
+  // automatically create routes
   vitePlugins.push(ConfigPagesPlugin())
 
-  // 开启.gz压缩  rollup-plugin-gzip
+  // enable .gz compression  rollup-plugin-gzip
   vitePlugins.push(ConfigCompressPlugin())
 
-  // 监听配置文件改动重启
+  // listen for changes and restart
   vitePlugins.push(ConfigRestartPlugin())
 
-  // 构建时显示进度条
+  // show progress during build
   vitePlugins.push(ConfigProgressPlugin())
 
   // eruda
