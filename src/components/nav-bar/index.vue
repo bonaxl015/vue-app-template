@@ -3,7 +3,11 @@
     <div class="nav-logo">LOGO</div>
     <div class="nav-item">
       <ul>
-        <li v-for="item in navItems" :key="item" @click="navbarSwitch(item)">
+        <li
+          v-for="item in navItems"
+          :key="item"
+          @click="navbarSwitch(item)"
+        >
           {{ $t(`tabbar.${item}`) }}
         </li>
       </ul>
@@ -26,13 +30,12 @@
     setup() {
       const router = useRouter()
 
-      const navItems: string[] = ['home', 'list', 'member', 'demo']
+      const navItems: string[] = ['home', 'list', 'member']
 
       const navbarSwitch = (item: string) => {
         if (item === 'home') router.push('home')
         if (item === 'list') router.push('list')
         if (item === 'member') router.push('member')
-        if (item === 'demo') router.push('demo')
       }
 
       const changeLanguage = (e) => {
