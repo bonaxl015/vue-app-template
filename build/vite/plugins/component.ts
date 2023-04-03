@@ -1,6 +1,6 @@
 /**
  * @name  AutoRegistryComponents
- * @description 按需加载，自动引入组件
+ * @description automatic importing component when needed
  */
 
 import Components from 'unplugin-vue-components/vite'
@@ -33,7 +33,11 @@ export const AutoRegistryComponents = () => {
     globalNamespaces: [],
     directives: true,
     include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-    exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]\.nuxt[\\/]/],
+    exclude: [
+      /[\\/]node_modules[\\/]/,
+      /[\\/]\.git[\\/]/,
+      /[\\/]\.nuxt[\\/]/
+    ],
     resolvers: [
       VueUseComponentsResolver(),
       VantResolver(),

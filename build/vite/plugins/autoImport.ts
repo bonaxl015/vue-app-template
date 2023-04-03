@@ -1,6 +1,6 @@
 /**
  * @name AutoImportDeps
- * @description 按需加载，自动引入
+ * @description automatic importing component when needed
  */
 
 import AutoImport from 'unplugin-auto-import/vite'

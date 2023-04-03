@@ -1,6 +1,6 @@
 /**
  * @name ConfigCompressPlugin
- * @description
+ * @description compress configuration
  */
 
 import viteCompression from 'vite-plugin-compression'
