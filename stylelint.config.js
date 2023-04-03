@@ -94,7 +94,10 @@ module.exports = {
     {
       files: ['*.less', '**/*.less'],
       customSyntax: 'postcss-less',
-      extends: ['stylelint-config-standard', 'stylelint-config-recommended-vue']
+      extends: [
+        'stylelint-config-standard',
+        'stylelint-config-recommended-vue'
+      ]
     }
   ]
 }
